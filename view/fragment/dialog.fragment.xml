@@ -1,0 +1,26 @@
+<c:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+>
+    <Dialog
+        title="Reset your password"
+        type="Message"
+        state="Information"
+        titleAlignment="Center"
+        contentWidth="20%"
+    >
+        <content>
+            <Label text="Email:"></Label>
+            <Input/>
+        </content>
+        <beginButton>
+            <Button
+                text="Cancel"
+                press="onCancelButtonPress"
+            />
+        </beginButton>
+        <endButton>
+            <Button text="Reset" />
+        </endButton>
+    </Dialog>
+</c:FragmentDefinition>

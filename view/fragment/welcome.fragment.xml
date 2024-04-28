@@ -1,0 +1,48 @@
+<c:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+>
+    <VBox
+        id="idVboxWelcome"
+        width="50%"
+        backgroundDesign="Solid"
+    >
+        <VBox alignItems="End">
+            <HBox
+                alignItems="Center"
+                class="sapUiLargeMarginTop sapUiLargeMarginEnd"
+            >
+                <Avatar
+                    src="sap-icon://course-book"
+                    displayShape="Square"
+                    class="sapUiSmallMarginEnd"
+                />
+                <Title
+                    text="Welcome My Login Page"
+                    titleStyle="H2"
+                />
+            </HBox>
+            <Title
+                text="Created with SAPUI5"
+                titleStyle="H5"
+                class="sapUiLargeMarginEnd"
+            />
+            <Button
+                text="About"
+                class="sapUiLargeMarginEnd"
+            />
+        </VBox>
+        <VBox
+            height="100%"
+            justifyContent="Center"
+            alignItems="Center"
+        >
+            <IllustratedMessage
+                title="Make your login"
+                description="Use you credentials to login"
+                illustrationSize="Scene"
+                illustrationType="sapIllus-AddPeople"
+            />
+        </VBox>
+    </VBox>
+</c:FragmentDefinition>

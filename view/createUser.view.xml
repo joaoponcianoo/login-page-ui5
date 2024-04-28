@@ -1,0 +1,55 @@
+<mvc:View
+    controllerName="loginpage.controller.createUser"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:c="sap.ui.core"
+    displayBlock="true"
+    height="100%"
+    busyIndicatorDelay="0"
+>
+    <Page showHeader="false">
+        <content>
+            <HBox fitContainer="true">
+                <VBox
+                    id="idVBoxForm"
+                    width="50%"
+                    alignItems="Center"
+                    justifyContent="Center"
+                >
+                    <VBox width="50%">
+                        <Title
+                            text="Sign Up"
+                            titleStyle="H1"
+                            class="sapUiSmallMarginBottom"
+                            width="100%"
+                            textAlign="Center"
+                        />
+                        <f:SimpleForm>
+                            <f:content>
+                                <Label text="User" />
+                                <Input />
+                                <Label text="Password" />
+                                <Input type="Password" />
+                                <Label text="Repeat Password" />
+                                <Input type="Password" />
+                            </f:content>
+                        </f:SimpleForm>
+
+                        <Button
+                            text="Create User"
+                            type="Emphasized"
+                            class="sapUiSmallMarginTop"
+                            width="100%"
+                        />
+                    </VBox>
+                </VBox>
+
+                <c:Fragment
+                    fragmentName="loginpage.view.fragment.welcome"
+                    type="XML"
+                />
+            </HBox>
+        </content>
+    </Page>
+</mvc:View>

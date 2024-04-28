@@ -1,0 +1,130 @@
+<mvc:View
+    controllerName="loginpage.controller.login"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:c="sap.ui.core"
+>
+    <Page
+        id="page"
+        showHeader="false"
+        title="{i18n>title}"
+    >
+        <content>
+            <HBox
+                id="idHBoxMain"
+                fitContainer="true"
+            >
+                <VBox
+                    id="idVBoxForm"
+                    width="50%"
+                    alignItems="Center"
+                    justifyContent="Center"
+                >
+                    <VBox width="50%">
+                        <Title
+                            text="Welcome Back"
+                            titleStyle="H1"
+                            class="sapUiSmallMarginBottom"
+                            width="100%"
+                            textAlign="Center"
+                        />
+                        <f:SimpleForm>
+                            <f:content>
+                                <Label text="User" />
+                                <Input />
+                                <Label text="Password" />
+                                <Input
+                                    id="idInputPassword"
+                                    type="Password"
+                                    showValueHelp="true"
+                                    valueHelpIconSrc="sap-icon://show"
+                                    valueHelpRequest="onInputValueHelpRequest"
+                                />
+                                <HBox
+                                    justifyContent="SpaceBetween"
+                                    alignItems="Center"
+                                >
+                                    <HBox alignItems="Center">
+                                        <CheckBox />
+                                        <Label text="Keep me logged in " />
+                                    </HBox>
+                                    <Link
+                                        text="Forgot your password?"
+                                        press="onForgotYourPasswordLinkPress"
+                                    />
+                                </HBox>
+                            </f:content>
+                        </f:SimpleForm>
+                        <Button
+                            text="Login"
+                            type="Emphasized"
+                            width="100%"
+                            class="sapUiSmallMarginTop sapUiSmallMarginBottom"
+                        />
+                        <HBox justifyContent="Center">
+                            <Text
+                                text="Don't have an account?"
+                                class="sapUiSmallMarginEnd"
+                            />
+                            <Link
+                                text="Sign Up"
+                                press="onNavToCreateUser"
+                            />
+                        </HBox>
+                    </VBox>
+                </VBox>
+
+                <c:Fragment
+                    fragmentName="loginpage.view.fragment.welcome"
+                    type="XML"
+                />
+
+                <!-- <VBox
+                    id="idVboxWelcome"
+                    width="50%"
+                    backgroundDesign="Solid"
+                >
+                    <VBox alignItems="End">
+                        <HBox
+                            alignItems="Center"
+                            class="sapUiLargeMarginTop sapUiLargeMarginEnd"
+                        >
+                            <Avatar
+                                src="sap-icon://course-book"
+                                displayShape="Square"
+                                class="sapUiSmallMarginEnd"
+                            />
+                            <Title
+                                text="Welcome My Login Page"
+                                titleStyle="H2"
+                            />
+                        </HBox>
+                        <Title
+                            text="Created with SAPUI5"
+                            titleStyle="H5"
+                            class="sapUiLargeMarginEnd"
+                        />
+                        <Button
+                            text="About"
+                            class="sapUiLargeMarginEnd"
+                        />
+                    </VBox>
+                    <VBox
+                        height="100%"
+                        justifyContent="Center"
+                        alignItems="Center"
+                    >
+                        <IllustratedMessage
+                            title="Make your login"
+                            description="Use you credentials to login"
+                            illustrationSize="Scene"
+                            illustrationType="sapIllus-AddPeople"
+                        />
+                    </VBox>
+                </VBox> -->
+            </HBox>
+        </content>
+    </Page>
+</mvc:View>
